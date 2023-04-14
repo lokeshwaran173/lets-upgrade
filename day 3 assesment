@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fixed Header, Centered Content, and Fixed Footer Layout</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		
+		body {
+			height: 100vh;
+			display: flex;
+			flex-direction: column;
+		}
+		
+		header {
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			height: 50px;
+			background-color: #333;
+			color: #fff;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		
+		main {
+			flex: 1;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		
+		footer {
+			position: fixed;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			height: 50px;
+			background-color: #333;
+			color: #fff;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Fixed Header</h1>
+	</header>
+	<main>
+		<h2>Centered Content</h2>
+	</main>
+	<footer>
+		<h3>Fixed Footer</h3>
+	</footer>
+</body>
+</html>
